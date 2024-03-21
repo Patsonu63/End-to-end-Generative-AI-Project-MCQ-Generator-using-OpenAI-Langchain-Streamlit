@@ -3,13 +3,14 @@ import json
 import traceback
 import pandas as pd
 from dotenv import load_dotenv
-from src.mcqgenerator.utils import read_file, get_table_data
-from src.mcqgenerator.logger import logging
+from mcqgenerator.utils import read_file,get_table_data
+from mcqgenerator.logger import logging
 
-# Import necessary packages from langchain
+#imporing necessary packages packages from langchain
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate
-from langchain.chains import LLMChain, SequentialChain
+from langchain.chains import LLMChain
+from langchain.chains import SequentialChain
 
 
 # Load environment variables from the .env file
